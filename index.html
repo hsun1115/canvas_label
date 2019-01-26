@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>Display labels</title>
+</head>
+<style type="text/css">
+  .bgimg {
+    background-image: url("https://cdn.jsdelivr.net/gh/hsun1115/canvas_label/upload/01.jpg");
+    background-size: 850px 450px;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 850px;
+  }
+  #container {
+  position: relative;
+}
+canvas{
+  position: absolute;
+}
+</style>
+<body>
+  <h1>Label Filter</h1>
+  <div class="btn-group" role="group" aria-label="Basic example">
+  <button onclick = "displayPdc()" type="button" class="btn btn-warning btn-lg">PDC</button>
+  <button onclick = "displayEe()" type="button" class="btn btn-danger btn-lg">EE</button>
+  <button type="button" class="btn btn-success btn-lg">Right</button>
+</div>
+  <div id="container" class="bgimg">
+    <canvas id="PDC" height="450px" width="850px" style="display: none"></canvas>
+    <canvas id="EE" height="450px" width="850px" style="display: none"></canvas>
+  </div>
+  <script>
+    function displayPdc(){
+    var pdc = document.getElementById("PDC");
+    if(pdc.style.display === "none"){
+      pdc.style.display="block";
+    var pdc1 = pdc.getContext("2d");
+    pdc1.fillStyle = "#ffbb33";
+    pdc1.fillRect(510, 44, 12,33);
+    pdc1.fillStyle = "black";
+    pdc1.fillText("PDC1", 510, 54);
+    var pdc2 = pdc.getContext("2d");
+    pdc2.fillStyle = "#ffbb33";
+    pdc2.fillRect(258, 162, 12, 24);
+    pdc2.fillStyle = "black";
+    pdc2.fillText("PDC2", 258, 172);
+  }else{
+    pdc.style.display="none";
+    }
+  }
+  function displayEe(){
+    var ee = document.getElementById("EE");
+    if(ee.style.display === "none"){
+      ee.style.display="block";
+    var ee219 = ee.getContext("2d");
+    ee219.fillStyle = "#ff4444";
+    ee219.fillRect(259, 148, 12,12);
+    ee219.fillStyle = "black";
+    ee219.fillText("EE219", 259, 158);
+    var ee209 = ee.getContext("2d");
+    ee209.fillStyle = "#ff4444";
+    ee209.fillRect(263, 192, 12,12);
+    ee209.fillStyle = "black";
+    ee209.fillText("EE209", 263, 202);
+  }else{
+    ee.style.display="none";
+    }
+  }
+  </script>
+</body>
+</html>
