@@ -32,15 +32,22 @@ canvas{
     <canvas id="EE" height="450px" width="850px" style="display: none"></canvas>
   </div>
   <script>
+    //每个function画一个类别的label
     function displayPdc(){
     var pdc = document.getElementById("PDC");
     if(pdc.style.display === "none"){
       pdc.style.display="block";
+      //画PDC1
     var pdc1 = pdc.getContext("2d");
+      //color
     pdc1.fillStyle = "#ffbb33";
+      //坐标(左上角横坐标，左上角纵坐标,长，宽)
     pdc1.fillRect(510, 44, 12,33);
+      //文字颜色
     pdc1.fillStyle = "black";
+      //文字位置(横坐标不变，纵坐标+10)
     pdc1.fillText("PDC1", 510, 54);
+      //画PDC2
     var pdc2 = pdc.getContext("2d");
     pdc2.fillStyle = "#ffbb33";
     pdc2.fillRect(258, 162, 12, 24);
