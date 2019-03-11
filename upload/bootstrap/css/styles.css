@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url(https://cdn.jsdelivr.net/gh/hsun1115/canvas_label/upload/01.jpg) no-repeat;
+  background-size: 850px 450px;
+  background-position:60px 120px;
+}
+
+/*h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}*/
+
+/*.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}*/
+
+.button {
+  font-size: 1.2vh;
+/*  padding: 10px;*/
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: #ffbb33;
+  height: 33px;
+  width: 12px;
+  position: fixed;
+  left: 571px;
+  top: 164px;
+/*  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;*/
+  cursor: pointer;
+/*  transition: all 0.3s ease-out;*/
+}
+#pdc1{
+    font-size: 1.2vh;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: #ffbb33;
+  height: 33px;
+  width: 12px;
+  position: fixed;
+  left: 571px;
+  top: 164px;
+  cursor: pointer;
+}
+#pdc1:hover {
+  background: #FF8800;
+}
+#pdc2{
+    font-size: 1vh;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: #ffbb33;
+  height: 24px;
+  width: 12px;
+  position: fixed;
+  left: 318px;
+  top: 282px;
+  cursor: pointer;
+}
+#pdc2:hover {
+  background: #FF8800;
+}
+.button:hover {
+  background: #FF8800;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#pdc_1 {
+/*  margin: 70px auto;*/
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  left: 571px;
+  top: 94px;
+  transition: all 5s ease-in-out;
+}
+#pdc_2 {
+/*  margin: 70px auto;*/
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  left: 318px;
+  top: 212px;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
