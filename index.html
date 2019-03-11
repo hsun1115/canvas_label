@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/hsun1115/canvas_label/upload/bootstrap/css/styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/hsun1115/canvas_label/upload/bootstrap/js/myScript.js"></script>
+	<title>Display labels</title>
+</head>
+<body>
+<h1>Label Filter</h1>
+  <div class="btn-group" role="group" aria-label="Basic example">
+  <button onclick = "displayPdc()" type="button" class="btn btn-warning btn-lg">PDC</button>
+  <button onclick = "displayEe()" type="button" class="btn btn-danger btn-lg">EE</button>
+  <button type="button" class="btn btn-success btn-lg">Right</button>
+</div>
+
+<div class="box">
+	<a class="pdc" id="pdc1" style="display: none" href="#popup1">PDC1</a>
+	<a class="pdc" id="pdc2" style="display: none" href="#popup2">PDC2</a>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup" id="pdc_1">
+		<a href="#">more details about PDC1</a>
+		<a class="close" href="#">&times;</a>
+<!-- 		<div class="content">
+			Thank to pop me out of that button, but now i'm done so you can close this window.
+		</div> -->
+	</div>
+</div>
+<div id="popup2" class="overlay">
+	<div class="popup" id="pdc_2">
+		<a href="#">more details about PDC2</a>
+		<a class="close" href="#">&times;</a>
+	</div>
+</div>
+</body>
+</html>
